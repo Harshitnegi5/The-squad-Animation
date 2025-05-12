@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const deflautLetters = nameElement[0].querySelectorAll(".letter");
+  const defaultLetters = nameElement[0].querySelectorAll(".letter");
 
-  gsap.to(deflautLetters, {
+  gsap.to(defaultLetters, {
     y: "100%",
   });
 
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     profileImagesContainer.addEventListener("mouseenter", () => {
-      gsap.to(deflautLetters, {
+      gsap.to(defaultLetters, {
         y: "0%",
         ease: "power4.out",
         duration: 0.75,
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     profileImagesContainer.addEventListener("mouseleave", () => {
-      gsap.to(deflautLetters, {
+      gsap.to(defaultLetters, {
         y: "100%",
         ease: "power4.out",
         duration: 0.75,
